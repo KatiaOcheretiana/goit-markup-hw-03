@@ -179,7 +179,7 @@ img {
   color: var(--white-color);
   margin-bottom: 48px;
 
-  width: 496px;
+  max-width: 496px;
 }
 
 .hero-container {
@@ -200,11 +200,12 @@ img {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -271,6 +272,7 @@ img {
 .team-item {
   background: var(--white-color);
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
 }
@@ -282,7 +284,6 @@ img {
   padding: 32px 16px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
@@ -301,12 +302,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-end {
   color: var(--light-color);
 }
 .footer-text {
-  margin-top: 16px;
   max-width: 264px;
   letter-spacing: 0.02em;
   color: var(--light-color);
@@ -314,8 +317,18 @@ img {
 
 /* !------- PAGE PORTFOLIO-------- */
 /** ------------FILTERS-------------* */
-.filters-list {
+
+.container-portfolio {
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.portfolio-content {
   padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters-list {
   margin-bottom: 72px;
   display: flex;
   gap: 24px;
@@ -340,10 +353,10 @@ img {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
 .portfolio-content {
-  padding-bottom: 120px;
 }
 .services-list {
   display: flex;
